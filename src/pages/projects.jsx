@@ -7,6 +7,13 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
+import { useScrollAnimation } from '@/hooks/use-scroll-animation';
+import { ArrowRight } from 'lucide-react';
+
+// Import project images
+import project1Image from '@/assets/screencapture-localhost-5173-projects-2025-06-10-12_59_29.png';
+import project2Image from '@/assets/screencapture-localhost-TOK-BROKER-index-php-2025-06-10-13_29_57.png';
+import project3Image from '@/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
 
 const Projects = () => {
   useEffect(() => {
@@ -15,21 +22,21 @@ const Projects = () => {
 
   const completedProjects = [
     {
-      title: 'Daily Tasks',
-      description: 'A modern and responsive Todo application for managing daily tasks. Features include adding, removing, and marking tasks as complete, with a clean and intuitive user interface. The app provides a seamless experience for organizing daily activities with smooth animations and responsive design.',
-      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500',
-      technologies: ['React', 'CSS', 'Local Storage', 'Context API', 'Responsive Design'],
+      title: "MERN E-Commerce Platform",
+      description: "A full-stack e-commerce platform built with MERN stack, featuring user authentication, product management, shopping cart, and payment integration.",
+      image: project1Image,
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe"],
       category: 'Frontend Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/todo-app',
+      githubUrl: "#",
       status: 'Completed',
     },
     {
-      title: 'Tok Broker',
-      description: 'A comprehensive real estate e-commerce platform built with PHP. Features include user authentication, property search with advanced filters, property posting and management, responsive design, and detailed property listings. Users can browse, search, and post properties with all necessary details and images.',
-      image: './src/assets/screencapture-localhost-TOK-BROKER-index-php-2025-06-10-13_29_57.png',
-      technologies: ['PHP', 'MySQL', 'HTML/CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
-      category: 'Full Stack Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/TOK-BROKER.github.io',
+      title: "Real-Time Chat Application",
+      description: "A real-time chat application with features like private messaging, group chats, and file sharing.",
+      image: project2Image,
+      technologies: ["React", "Socket.io", "Node.js", "Express", "MongoDB"],
+      category: 'Realtime Project',
+      githubUrl: "#",
       status: 'Completed',
     },
     {
@@ -39,24 +46,6 @@ const Projects = () => {
       technologies: ['React', 'Redux','18+ filter', 'Jikan API', 'Tailwind CSS'],
       category: 'Anime Database',
       githubUrl: 'https://github.com/TanzeelNaqash/anime-play',
-      status: 'Completed',
-    },
-    {
-      title: 'Real-Time Chat Application',
-      description: 'A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall,  and file sharing capabilities.',
-      image: './src/assets/Screenshot 2025-03-10 143017.png',
-      technologies: ['React', 'Node.js', 'Socket.io','WebRTC', 'MongoDB', 'Express.js'],
-      category: 'Realtime Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3',
-      status: 'Completed',
-    },
-    {
-      title: 'Weather.io',
-      description: 'Weather.io is a sleek weather app built with Vite and React, giving you real-time weather updates with a smooth, responsive design. It features dynamic backgrounds that match the weather, an easy-to-use search, and animated effects for a modern touch. Whether on desktop or mobile, it keeps forecasts clear and navigation effortless.',
-      image: './src/assets/screencapture-localhost-5173-projects-2025-06-10-12_59_29.png',
-      technologies: ['React', 'Weather.io', 'Api', '5 days Forecast', 'Responsive', 'Realtime'],
-      category: 'Frontend Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/weather.io/tree/v1.2.0',
       status: 'Completed',
     },
     {
@@ -72,12 +61,11 @@ const Projects = () => {
 
   const ongoingProjects = [
     {
-      title: 'LabourHunt - Microservices Platform',
-      description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
-      image: './src/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png',
-      technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
+      title: "LabourHunt - Microservices Platform",
+      description: "A microservices-based platform connecting skilled workers with job opportunities, featuring real-time notifications and location-based job matching.",
+      image: project3Image,
+      technologies: ["React", "Node.js", "Docker", "Kubernetes", "MongoDB", "Redis"],
       category: 'Microservice Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
       status: 'In Progress',
     },
   ];

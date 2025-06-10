@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
+import { Mail, Github, Linkedin, ArrowRight, Instagram } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import profileImage from '@/assets/image.png';
 
 export default function AboutSection() {
   const ref = useScrollAnimation();
@@ -75,7 +79,7 @@ export default function AboutSection() {
                   stiffness: 300,
                   damping: 20
                 }}
-                src="./src/assets/image.png"
+                src={profileImage}
                 alt="Tanzeel Naqash - Full Stack Developer"
                 className="rounded-xl shadow-lg w-80 h-80 object-cover"
               />
