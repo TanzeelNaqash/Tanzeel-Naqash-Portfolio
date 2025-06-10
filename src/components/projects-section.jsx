@@ -6,6 +6,11 @@ import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { Link } from 'wouter';
 
+// Import project images
+import animePlayImage from '@/assets/Screenshot 2024-12-18 112307.png';
+import chatAppImage from '@/assets/Screenshot 2025-03-10 143017.png';
+import labourHuntImage from '@/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
+
 export default function ProjectsSection() {
   const ref = useScrollAnimation();
 
@@ -13,7 +18,7 @@ export default function ProjectsSection() {
     {
       title: 'AnimePlay',
       description: 'A 18+ filter anime database app using Redux, Jikan API, and more. Allows users to browse, search, and filter anime content with advanced controls.',
-      image: './src/assets/Screenshot 2024-12-18 112307.png',
+      image: animePlayImage,
       technologies: ['React', 'Redux','18+ filter', 'Jikan API', 'Tailwind CSS'],
       category: 'Anime Database',
       githubUrl: 'https://github.com/TanzeelNaqash/anime-play',
@@ -22,7 +27,7 @@ export default function ProjectsSection() {
     {
       title: 'Real-Time Chat Application',
       description: 'A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall,  and file sharing capabilities.',
-      image: './src/assets/Screenshot 2025-03-10 143017.png',
+      image: chatAppImage,
       technologies: ['React', 'Node.js', 'Socket.io','WebRTC', 'MongoDB', 'Express.js'],
       category: 'Realtime Project',
       githubUrl: 'https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3',
@@ -31,7 +36,7 @@ export default function ProjectsSection() {
     {
       title: 'LabourHunt - Microservices Platform',
       description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
-      image: './src/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png',
+      image: labourHuntImage,
       technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
       category: 'Microservices Project',
       githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',

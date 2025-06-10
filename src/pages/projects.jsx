@@ -14,11 +14,11 @@ import { ArrowRight } from 'lucide-react';
 import project1Image from '@/assets/screencapture-localhost-5173-projects-2025-06-10-12_59_29.png';
 import project2Image from '@/assets/screencapture-localhost-TOK-BROKER-index-php-2025-06-10-13_29_57.png';
 import project3Image from '@/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
+import project4Image from '@/assets/Screenshot 2024-12-18 112307.png';
+import project5Image from '@/assets/Screenshot 2025-03-10 143017.png';
 
 const Projects = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const ref = useScrollAnimation();
 
   const completedProjects = [
     {
@@ -40,23 +40,23 @@ const Projects = () => {
       status: 'Completed',
     },
     {
-      title: 'AnimePlay',
-      description: 'A 18+ filter anime database app using Redux, Jikan API, and more. Allows users to browse, search, and filter anime content with advanced controls.',
-      image: './src/assets/Screenshot 2024-12-18 112307.png',
-      technologies: ['React', 'Redux','18+ filter', 'Jikan API', 'Tailwind CSS'],
+      title: "AnimePlay",
+      description: "A 18+ filter anime database app using Redux, Jikan API, and more. Allows users to browse, search, and filter anime content with advanced controls.",
+      image: project4Image,
+      technologies: ["React", "Redux", "18+ filter", "Jikan API", "Tailwind CSS"],
       category: 'Anime Database',
-      githubUrl: 'https://github.com/TanzeelNaqash/anime-play',
+      githubUrl: "https://github.com/TanzeelNaqash/anime-play",
       status: 'Completed',
     },
     {
-      title: 'Recipe Seeker',
-      description: 'A comprehensive recipe discovery app built with React and TheMealDB API. Features include recipe search functionality, random recipe generation, detailed recipe information including ingredients, cooking instructions, and nutritional details. The app provides a user-friendly interface for exploring new recipes, saving favorites, and getting detailed cooking instructions.',
-      image: './src/assets/Screenshot 2024-11-06 125016.png',
-      technologies: ['React', 'TheMealDB API', 'CSS', 'Context API', 'Responsive Design'],
-      category: 'Frontend Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/recipe-seeker/tree/master',
+      title: "Real-Time Chat Application",
+      description: "A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall, and file sharing capabilities.",
+      image: project5Image,
+      technologies: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB", "Express.js"],
+      category: 'Realtime Project',
+      githubUrl: "https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3",
       status: 'Completed',
-    },
+    }
   ];
 
   const ongoingProjects = [
@@ -67,7 +67,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "Docker", "Kubernetes", "MongoDB", "Redis"],
       category: 'Microservice Project',
       status: 'In Progress',
-    },
+    }
   ];
 
   const ProjectCard = ({ project, index }) => (
@@ -141,7 +141,7 @@ const Projects = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Projects | Tanzeel Naqash</title>
-        <meta name="description" content="Explore my projects including web applications, full-stack development, and frontend projects." />
+        <meta name="description" content="Explore my portfolio of web development projects, including full-stack applications, real-time systems, and microservices." />
       </Helmet>
       <Navigation/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
@@ -155,8 +155,7 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            A collection of projects I've worked on, showcasing my skills and experience
-            in Frontend development, full-stack development, monolithic, microservices, and real-time applications.
+            A collection of my work, showcasing my skills and experience in web development.
           </p>
         </motion.div>
 
