@@ -7,67 +7,85 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
-import { useScrollAnimation } from '@/hooks/use-scroll-animation';
-import { ArrowRight } from 'lucide-react';
-
-// Import project images
-import project1Image from '@/assets/screencapture-localhost-5173-projects-2025-06-10-12_59_29.png';
-import project2Image from '@/assets/screencapture-localhost-TOK-BROKER-index-php-2025-06-10-13_29_57.png';
-import project3Image from '@/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
-import project4Image from '@/assets/Screenshot 2024-12-18 112307.png';
-import project5Image from '@/assets/Screenshot 2025-03-10 143017.png';
+import tokBrokerImage from '../assets/screencapture-localhost-TOK-BROKER-index-php-2025-06-10-13_29_57.png';
+import animePlayImage from '../assets/Screenshot 2024-12-18 112307.png';
+import chatAppImage from '../assets/Screenshot 2025-03-10 143017.png';
+import weatherImage from '../assets/screencapture-localhost-5173-projects-2025-06-10-12_59_29.png';
+import recipeImage from '../assets/Screenshot 2024-11-06 125016.png';
+import labourHuntImage from '../assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
 
 const Projects = () => {
-  const ref = useScrollAnimation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const completedProjects = [
     {
-      title: "MERN E-Commerce Platform",
-      description: "A full-stack e-commerce platform built with MERN stack, featuring user authentication, product management, shopping cart, and payment integration.",
-      image: project1Image,
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe"],
+      title: 'Daily Tasks',
+      description: 'A modern and responsive Todo application for managing daily tasks. Features include adding, removing, and marking tasks as complete, with a clean and intuitive user interface. The app provides a seamless experience for organizing daily activities with smooth animations and responsive design.',
+      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500',
+      technologies: ['React', 'CSS', 'Local Storage', 'Context API', 'Responsive Design'],
       category: 'Frontend Project',
-      githubUrl: "#",
+      githubUrl: 'https://github.com/TanzeelNaqash/todo-app',
       status: 'Completed',
     },
     {
-      title: "Real-Time Chat Application",
-      description: "A real-time chat application with features like private messaging, group chats, and file sharing.",
-      image: project2Image,
-      technologies: ["React", "Socket.io", "Node.js", "Express", "MongoDB"],
-      category: 'Realtime Project',
-      githubUrl: "#",
+      title: 'Tok Broker',
+      description: 'A comprehensive real estate e-commerce platform built with PHP. Features include user authentication, property search with advanced filters, property posting and management, responsive design, and detailed property listings. Users can browse, search, and post properties with all necessary details and images.',
+      image: tokBrokerImage,
+      technologies: ['PHP', 'MySQL', 'HTML/CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
+      category: 'Full Stack Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/TOK-BROKER.github.io',
       status: 'Completed',
     },
     {
-      title: "AnimePlay",
-      description: "A 18+ filter anime database app using Redux, Jikan API, and more. Allows users to browse, search, and filter anime content with advanced controls.",
-      image: project4Image,
-      technologies: ["React", "Redux", "18+ filter", "Jikan API", "Tailwind CSS"],
+      title: 'AnimePlay',
+      description: 'A 18+ filter anime database app using Redux, Jikan API, and more. Allows users to browse, search, and filter anime content with advanced controls.',
+      image: animePlayImage,
+      technologies: ['React', 'Redux','18+ filter', 'Jikan API', 'Tailwind CSS'],
       category: 'Anime Database',
-      githubUrl: "https://github.com/TanzeelNaqash/anime-play",
+      githubUrl: 'https://github.com/TanzeelNaqash/anime-play',
       status: 'Completed',
     },
     {
-      title: "Real-Time Chat Application",
-      description: "A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall, and file sharing capabilities.",
-      image: project5Image,
-      technologies: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB", "Express.js"],
+      title: 'Real-Time Chat Application',
+      description: 'A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall,  and file sharing capabilities.',
+      image: chatAppImage,
+      technologies: ['React', 'Node.js', 'Socket.io','WebRTC', 'MongoDB', 'Express.js'],
       category: 'Realtime Project',
-      githubUrl: "https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3",
+      githubUrl: 'https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3',
       status: 'Completed',
-    }
+    },
+    {
+      title: 'Weather.io',
+      description: 'Weather.io is a sleek weather app built with Vite and React, giving you real-time weather updates with a smooth, responsive design. It features dynamic backgrounds that match the weather, an easy-to-use search, and animated effects for a modern touch. Whether on desktop or mobile, it keeps forecasts clear and navigation effortless.',
+      image: weatherImage,
+      technologies: ['React', 'Weather.io', 'Api', '5 days Forecast', 'Responsive', 'Realtime'],
+      category: 'Frontend Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/weather.io/tree/v1.2.0',
+      status: 'Completed',
+    },
+    {
+      title: 'Recipe Seeker',
+      description: 'A comprehensive recipe discovery app built with React and TheMealDB API. Features include recipe search functionality, random recipe generation, detailed recipe information including ingredients, cooking instructions, and nutritional details. The app provides a user-friendly interface for exploring new recipes, saving favorites, and getting detailed cooking instructions.',
+      image: recipeImage,
+      technologies: ['React', 'TheMealDB API', 'CSS', 'Context API', 'Responsive Design'],
+      category: 'Frontend Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/recipe-seeker/tree/master',
+      status: 'Completed',
+    },
   ];
 
   const ongoingProjects = [
     {
-      title: "LabourHunt - Microservices Platform",
-      description: "A microservices-based platform connecting skilled workers with job opportunities, featuring real-time notifications and location-based job matching.",
-      image: project3Image,
-      technologies: ["React", "Node.js", "Docker", "Kubernetes", "MongoDB", "Redis"],
+      title: 'LabourHunt - Microservices Platform',
+      description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
+      image: labourHuntImage,
+      technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
       category: 'Microservice Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
       status: 'In Progress',
-    }
+    },
   ];
 
   const ProjectCard = ({ project, index }) => (
@@ -141,7 +159,7 @@ const Projects = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Projects | Tanzeel Naqash</title>
-        <meta name="description" content="Explore my portfolio of web development projects, including full-stack applications, real-time systems, and microservices." />
+        <meta name="description" content="Explore my projects including web applications, full-stack development, and frontend projects." />
       </Helmet>
       <Navigation/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
@@ -155,7 +173,8 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            A collection of my work, showcasing my skills and experience in web development.
+            A collection of projects I've worked on, showcasing my skills and experience
+            in Frontend development, full-stack development, monolithic, microservices, and real-time applications.
           </p>
         </motion.div>
 

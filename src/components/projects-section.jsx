@@ -5,11 +5,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { Link } from 'wouter';
-
-// Import project images
-import animePlayImage from '@/assets/Screenshot 2024-12-18 112307.png';
-import chatAppImage from '@/assets/Screenshot 2025-03-10 143017.png';
-import labourHuntImage from '@/assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
+import animePlayImage from '../assets/Screenshot 2024-12-18 112307.png';
+import chatAppImage from '../assets/Screenshot 2025-03-10 143017.png';
+import labourHuntImage from '../assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
 
 export default function ProjectsSection() {
   const ref = useScrollAnimation();

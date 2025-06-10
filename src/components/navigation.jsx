@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Menu, X, Mail, Github, Linkedin, ArrowRight, Instagram } from 'lucide-react';
+import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/theme-provider';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
-import profileImage from '@/assets/image.png';
+import profileImage from '../assets/image.png';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -89,7 +89,7 @@ export default function Navigation() {
             <img
               src={profileImage}
               alt="Profile"
-              className="w-10 h-10 rounded-full object-cover"
+              className="w-8 h-8 rounded-full "
             />
             <span className="text-lg font-bold">
               <Link 

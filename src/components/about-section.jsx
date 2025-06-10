@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
-import { Mail, Github, Linkedin, ArrowRight, Instagram } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import profileImage from '@/assets/image.png';
+import profileImage from '../assets/image.png';
 
 export default function AboutSection() {
   const ref = useScrollAnimation();
