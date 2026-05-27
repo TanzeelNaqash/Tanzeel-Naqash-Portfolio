@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { Link } from 'wouter';
-import animePlayImage from '../assets/Screenshot 2024-12-18 112307.png';
+import museMelodyImage from '../assets/pwa-512x512.png'
 import chatAppImage from '../assets/Screenshot 2025-03-10 143017.png';
 import labourHuntImage from '../assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
 
@@ -14,12 +14,21 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: 'AnimePlay',
-      description: 'A 18+ filter anime database app using Redux, Jikan API, and more. Allows users to browse, search, and filter anime content with advanced controls.',
-      image: animePlayImage,
-      technologies: ['React', 'Redux','18+ filter', 'Jikan API', 'Tailwind CSS'],
-      category: 'Anime Database',
-      githubUrl: 'https://github.com/TanzeelNaqash/anime-play',
+      title: 'LabourHunt - Microservices Platform',
+      description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
+      image: labourHuntImage,
+      technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
+      category: 'Microservice Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
+      status: 'Completed',
+    },
+    {
+      title: 'MuseMelody - Streaming App',
+      description: 'Stream millions of songs from YouTube, upload your own tracks, and enjoy seamless playback wit realtime lyrics.',
+      image: museMelodyImage,
+      technologies: ['React', 'Third-Party API', 'Drizzle', 'PWA', 'Node.js', 'Postgres', 'GoogleOauth'],
+      category: 'Streaming Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/MuseMelody',
       status: 'Completed',
     },
     {
@@ -32,12 +41,12 @@ export default function ProjectsSection() {
       status: 'Completed',
     },
     {
-      title: 'LabourHunt - Microservices Platform',
-      description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
-      image: labourHuntImage,
-      technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
-      category: 'Microservices Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
+      title: 'Relay - Logistics Platform ',
+      description: '-',
+      image: 'https://unsplash.com/illustrations/a-green-and-white-truck-is-shown-on-a-white-background-UVRIHhe84J0&auto=format&fit=crop&w=800&h=500',
+      technologies: ['React', 'monoservice', 'Drizzle', 'Node.js', 'Postgres', 'GoogleOauth'],
+      category: 'Ecommerce Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/relay',
       status: 'In Progress',
     },
   ];
@@ -63,19 +72,18 @@ export default function ProjectsSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.8 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              transition={{ 
-                type: "spring",
-                stiffness: 400,
-                damping: 25
-              }}
-              className="transition-transform duration-300"
-            >
+            key={project.title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5 }}
+            transition={{
+              delay: index * 0.1,
+              duration: 0.5,
+              type: "spring",
+              damping: 25,
+              stiffness: 400,
+            }}
+          >
               <Card className="bg-white dark:bg-slate-800 shadow-sm hover:shadow-lg transition-all theme-transition h-full overflow-hidden">
                 <div className="relative">
                   <img

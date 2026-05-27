@@ -21,6 +21,33 @@ const Projects = () => {
 
   const completedProjects = [
     {
+      title: 'LabourHunt - Microservices Platform',
+      description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
+      image: labourHuntImage,
+      technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
+      category: 'Microservice Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
+      status: 'Completed',
+    },
+    {
+      title: 'MuseMelody - Streaming App',
+      description: 'Stream millions of songs from YouTube, upload your own tracks, and enjoy seamless playback wit realtime lyrics.',
+      image: museMelodyImage,
+      technologies: ['React', 'Third-Party API', 'Drizzle', 'PWA', 'Node.js', 'Postgres', 'GoogleOauth'],
+      category: 'Streaming Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/MuseMelody',
+      status: 'Completed',
+    },
+    {
+      title: 'Real-Time Chat Application',
+      description: 'A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall,  and file sharing capabilities.',
+      image: chatAppImage,
+      technologies: ['React', 'Node.js', 'Socket.io','WebRTC', 'MongoDB', 'Express.js'],
+      category: 'Realtime Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3',
+      status: 'Completed',
+    },
+    {
       title: 'Daily Tasks',
       description: 'A modern and responsive Todo application for managing daily tasks. Features include adding, removing, and marking tasks as complete, with a clean and intuitive user interface. The app provides a seamless experience for organizing daily activities with smooth animations and responsive design.',
       image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500',
@@ -47,15 +74,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/TanzeelNaqash/anime-play',
       status: 'Completed',
     },
-    {
-      title: 'Real-Time Chat Application',
-      description: 'A full-featured chat application with real-time messaging using Socket.io and WebRTC. Built as a monolithic architecture with user authentication, private messaging, group chats, videoCall, audioCall,  and file sharing capabilities.',
-      image: chatAppImage,
-      technologies: ['React', 'Node.js', 'Socket.io','WebRTC', 'MongoDB', 'Express.js'],
-      category: 'Realtime Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/REX-CHAT-APP/tree/v3',
-      status: 'Completed',
-    },
+    
     {
       title: 'Weather.io',
       description: 'Weather.io is a sleek weather app built with Vite and React, giving you real-time weather updates with a smooth, responsive design. It features dynamic backgrounds that match the weather, an easy-to-use search, and animated effects for a modern touch. Whether on desktop or mobile, it keeps forecasts clear and navigation effortless.',
@@ -74,24 +93,6 @@ const Projects = () => {
       githubUrl: 'https://github.com/TanzeelNaqash/recipe-seeker/tree/master',
       status: 'Completed',
     },
-    {
-      title: 'LabourHunt - Microservices Platform',
-      description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
-      image: labourHuntImage,
-      technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
-      category: 'Microservice Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
-      status: 'Completed',
-    },
-    {
-      title: 'MuseMelody - Streaming App',
-      description: 'Stream millions of songs from YouTube, upload your own tracks, and enjoy seamless playback wit realtime lyrics.',
-      image: museMelodyImage,
-      technologies: ['React', 'Third-Party API', 'Drizzle', 'PWA', 'Node.js', 'Postgres', 'GoogleOauth'],
-      category: 'Streaming Project',
-      githubUrl: 'https://github.com/TanzeelNaqash/MuseMelody',
-      status: 'Completed',
-    },
    
   ];
 
@@ -99,7 +100,7 @@ const Projects = () => {
     {
       title: 'Relay - Logistics Platform ',
       description: '-',
-      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500',
+      image: 'https://unsplash.com/illustrations/a-green-and-white-truck-is-shown-on-a-white-background-UVRIHhe84J0&auto=format&fit=crop&w=800&h=500',
       technologies: ['React', 'monoservice', 'Drizzle', 'Node.js', 'Postgres', 'GoogleOauth'],
       category: 'Ecommerce Project',
       githubUrl: 'https://github.com/TanzeelNaqash/relay',
