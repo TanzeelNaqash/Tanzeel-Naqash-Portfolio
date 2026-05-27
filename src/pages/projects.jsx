@@ -100,7 +100,7 @@ const Projects = () => {
     {
       title: 'Relay - Logistics Platform ',
       description: '-',
-      image: 'https://unsplash.com/illustrations/a-green-and-white-truck-is-shown-on-a-white-background-UVRIHhe84J0&auto=format&fit=crop&w=800&h=500',
+      image: 'https://unsplash.com/photos/grayscale-photo-of-cars-on-road-nbRgZltoOck',
       technologies: ['React', 'monoservice', 'Drizzle', 'Node.js', 'Postgres', 'GoogleOauth'],
       category: 'Ecommerce Project',
       githubUrl: 'https://github.com/TanzeelNaqash/relay',
