@@ -13,7 +13,7 @@ import chatAppImage from '../assets/Screenshot 2025-03-10 143017.png';
 import weatherImage from '../assets/screencapture-localhost-5173-projects-2025-06-10-12_59_29.png';
 import recipeImage from '../assets/Screenshot 2024-11-06 125016.png';
 import labourHuntImage from '../assets/screencapture-localhost-5173-about-2025-05-18-19_12_32.png';
-
+import museMelodyImage from '../assets/pwa-512x512.png'
 const Projects = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -74,9 +74,6 @@ const Projects = () => {
       githubUrl: 'https://github.com/TanzeelNaqash/recipe-seeker/tree/master',
       status: 'Completed',
     },
-  ];
-
-  const ongoingProjects = [
     {
       title: 'LabourHunt - Microservices Platform',
       description: 'A scalable job marketplace platform built with microservices architecture. Features include job posting, candidate matching, real-time notifications, and advanced search capabilities. Currently implementing the core services and API gateway.',
@@ -84,22 +81,46 @@ const Projects = () => {
       technologies: ['React', 'Microservices', 'Node.js', 'MongoDB', 'REST APIs'],
       category: 'Microservice Project',
       githubUrl: 'https://github.com/TanzeelNaqash/LabourHunt',
+      status: 'Completed',
+    },
+    {
+      title: 'MuseMelody - Streaming App',
+      description: 'Stream millions of songs from YouTube, upload your own tracks, and enjoy seamless playback wit realtime lyrics.',
+      image: museMelodyImage,
+      technologies: ['React', 'Third-Party API', 'Drizzle', 'PWA', 'Node.js', 'Postgres', 'GoogleOauth'],
+      category: 'Streaming Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/MuseMelody',
+      status: 'Completed',
+    },
+   
+  ];
+
+  const ongoingProjects = [
+    {
+      title: 'Relay - Logistics Platform ',
+      description: '-',
+      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500',
+      technologies: ['React', 'monoservice', 'Drizzle', 'Node.js', 'Postgres', 'GoogleOauth'],
+      category: 'Ecommerce Project',
+      githubUrl: 'https://github.com/TanzeelNaqash/relay',
       status: 'In Progress',
     },
   ];
 
   const ProjectCard = ({ project, index }) => (
     <motion.div
-      key={project.title}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.1, duration: 0.5 }}
-      whileHover={{ y: -5 }}
-      transition={{ 
-        type: "spring",
-        stiffness: 400,
-        damping: 25
-      }}
+    key={project.title}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    whileHover={{ y: -5 }}
+    transition={{
+      delay: index * 0.1,
+      duration: 0.5,
+      type: "spring",
+      damping: 25,
+      stiffness: 400,
+    }}
+  
     >
       <Card className="h-full overflow-hidden">
         <div className="relative">
